@@ -2,10 +2,11 @@ import { BookData } from "@/types";
 import style from "./page.module.css";
 import { notFound } from "next/navigation";
 
-export const dynamicParams = false;
-export function generateStaticParams() {
-  return [{ id: "1" }, { id: "2" }, { id: "3" }];
-}
+// 에러의 원인으로 의심가는 코드입니다. 
+// export const dynamicParams = false;
+// export function generateStaticParams() {
+//   return [{ id: "1" }, { id: "2" }, { id: "3" }];
+// }
 
 export default async function Page({
   params,
